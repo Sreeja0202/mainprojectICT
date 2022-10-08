@@ -1,0 +1,64 @@
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand-lg" style="background-color: #240c30">
+  <div class="container-fluid text-light p-3">
+    <!-- remove the text and place the icon here to ANU -->
+    ICTAK TIME TRACKER APP
+  </div>
+</nav>
+
+<!-- navbar ends here -->
+<div class="container">
+  <form
+    class="col-md-5 mt-5 loginform p-3"
+    [formGroup]="loginForm"
+    (ngSubmit)="logIn()"
+  >
+    <div class="text-center mt-3">
+      <h1>LOGIN HERE</h1>
+    </div>
+    <div class="form-floating mb-3 mt-5">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+        formControlName="eemail"
+      />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+        formControlName="epassword"
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
+    <br />
+    <br />
+    <div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width: 100%">
+        Submit
+      </button>
+    </div>
+    <br />
+    <div class="text-center">
+      <small class="text-primary"
+        ><a routerLink="/login" style="text-decoration: none"
+          >Forgot Password</a
+        ></small
+      >
+    </div>
+  </form>
+</div>
+<!-- login form ends here -->
+
+<!-- footer starts here -->
+<footer style="background-color: #240c30; margin-top: 200px" class="p-2">
+  <div class="text-center">
+    <h5 class="text-muted text-light">Copyright @2016</h5>
+  </div>
+</footer>
+<!-- footer ends here -->
